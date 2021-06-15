@@ -101,6 +101,7 @@ android_library {
         "SettingsLibActivityEmbedding",
         "Settings-change-ids",
         "SystemUIUnfoldLib",
+        "glide",
         "VendorSupport-preference",
         "kotlin-stdlib",
         "kotlinx_coroutines_android",
@@ -159,4 +160,9 @@ filegroup {
 filegroup {
     name: "Settings_manifest",
     srcs: ["AndroidManifest.xml"],
+}
+
+android_library_import {
+    name: "glide",
+    aars: ["libs/glide-4.9.0.aar"],
 }
