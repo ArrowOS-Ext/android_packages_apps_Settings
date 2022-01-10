@@ -234,4 +234,7 @@
     <string name="back_height_title">Back gesture height</string>
     <string name="back_height_summary">Screen height valid for back gesture</string>
 
+    <!-- Floating rotation button -->
+    <string name="enable_floating_rotation_button_title">Floating rotation button</string>
+
 </resources>
