@@ -14594,4 +14594,9 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="security_settings_face_enroll_too_hot_message">Face Unlock setup can’t be completed because the phone is too hot. Try again later when the phone cools down.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Skip Face Unlock</string>
     <string name="security_settings_face_enroll_too_hot_title">Phone is too hot</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
 </resources>
