@@ -53,7 +53,16 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java", "src/**/*.kt",
+           "Sharpener/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.arrow.support"],
+
+    resource_dirs: [
+        "res",
+        "Sharpener/res",
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",

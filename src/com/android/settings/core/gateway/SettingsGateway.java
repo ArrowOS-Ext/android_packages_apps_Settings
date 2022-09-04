@@ -181,6 +181,8 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherClientManager;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
+import com.arrow.support.Sharpener;
+
 public class SettingsGateway {
 
     /**
@@ -348,7 +350,8 @@ public class SettingsGateway {
             MobileNetworkSettings.class.getName(),
             AppLocaleDetails.class.getName(),
             TurnScreenOnSettings.class.getName(),
-            WifiTetherClientManager.class.getName()
+            WifiTetherClientManager.class.getName(),
+            Sharpener.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -391,5 +394,6 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
+            Settings.SharpenerActivity.class.getName(),
     };
 }

@@ -268,4 +268,8 @@
     <!-- Advanced sound settings -->
     <string name="sound_settings_advanced_title">Additional sounds</string>
 
+    <!-- Sharpener -->
+    <string name="sharpener_title">Sharpener</string>
+    <string name="sharpener_summary">Come here and sharpen your arrows!</string>
+
 </resources>
