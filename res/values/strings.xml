@@ -14571,6 +14571,10 @@ Learn more at g.co/pixel/faceunlock."</string>
     <!-- [CHAR LIMIT=NONE] Hint for QR code process failure -->
     <string name="bt_le_audio_qr_code_is_not_valid_format">QR code isn\u0027t a valid format</string>
 
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca">Force LTE CA</string>
+    <string name="force_lte_ca_summary">Force LTE carrier aggregation to work</string>
+
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Face Unlock setup timed out</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Now you can use your face to unlock your phone or verify it’s you, like when you sign in to apps or approve a purchase</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Now when you pick up your phone or tap the screen, you can use your face to unlock.
