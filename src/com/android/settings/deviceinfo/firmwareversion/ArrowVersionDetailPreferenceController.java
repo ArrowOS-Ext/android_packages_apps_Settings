@@ -64,12 +64,12 @@ public class ArrowVersionDetailPreferenceController extends BasePreferenceContro
 
     @Override
     public CharSequence getSummary() {
-	String[] arrowVer = SystemProperties.get(KEY_ARROW_VERSION_PROP).split("v");
+	String arrowVer = SystemProperties.get(KEY_ARROW_VERSION_PROP);
 	String arrowReleasetype =  SystemProperties.get(KEY_ARROW_RELEASETYPE_PROP);
         String arrowZiptype =  SystemProperties.get(KEY_ARROW_ZIPTYPE_PROP);
 
-	if (!arrowVer[1].isEmpty() && !arrowReleasetype.isEmpty() && !arrowZiptype.isEmpty())
-	    return arrowVer[1] + " | " + arrowZiptype + " | " + arrowReleasetype;
+	if (!arrowVer.isEmpty() && !arrowReleasetype.isEmpty() && !arrowZiptype.isEmpty())
+	    return arrowVer + " | " + arrowZiptype + " | " + arrowReleasetype;
 	else
             return mContext.getString(R.string.unknown);
     }
