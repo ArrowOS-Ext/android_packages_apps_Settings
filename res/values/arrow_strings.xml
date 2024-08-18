@@ -26,6 +26,7 @@
     <string name="build_date">Build date</string>
     <string name="arrow_version">ArrowOS version</string>
     <string name="about_device_name">Device</string>
+    <string name="maintainer">Maintainer</string>
 
     <!-- Refresh rate -->
     <string name="refresh_rate_title">Refresh rate</string>
