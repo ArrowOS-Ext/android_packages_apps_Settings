@@ -6501,6 +6501,10 @@ Learn more at g.co/pixel/faceunlock."</string>
     <string name="battery_tip_summary_summary" product="tablet">Tablet has typical background battery usage</string>
     <!-- Summary for the battery summary tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_summary_summary" product="device">Device has typical background battery usage</string>
+    <!-- Title for the battery replacement tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_replacement_title">Battery replacement recommended</string>
+    <!-- Summary for the battery replacement tip [CHAR LIMIT=NONE] -->
+    <string name="battery_tip_replacement_summary">Battery capacity and charging performance are reduced, and battery replacement is recommended.</string>
     <!-- Title for the low battery tip [CHAR LIMIT=NONE] -->
     <string name="battery_tip_low_battery_title">Battery level low</string>
     <!-- Summary for the low battery tip [CHAR LIMIT=NONE] -->
@@ -8255,6 +8259,8 @@ Learn more at g.co/pixel/faceunlock."</string>
     <string name="help_url_battery" translatable="false"></string>
     <!-- Help URL, Battery Defender [DO NOT TRANSLATE] -->
     <string name="help_url_battery_defender" translatable="false"></string>
+    <!-- Help URL, Battery Replacement [DO NOT TRANSLATE] -->
+    <string name="help_url_battery_replacement" translatable="false"></string>
     <!-- Help URL, Dock Defender [DO NOT TRANSLATE] -->
     <string name="help_url_dock_defender" translatable="false"></string>
     <!-- Help URL, Accounts [DO NOT TRANSLATE] -->
