@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS Statistieken</string>
     <string name="arrow_stats_summary">Gewoon bijhouden op hoeveel toestellen we draaien</string>
     <string name="build_date">Compileerdatum</string>
-    <string name="arrow_version">ArrowOS versie</string>
+    <string name="arrow_version">ArrowOS Extended versie</string>
     <string name="about_device_name">Toestel</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimale verversingsfrequentie</string>

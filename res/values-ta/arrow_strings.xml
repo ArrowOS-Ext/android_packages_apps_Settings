@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS விபரம்</string>
     <string name="arrow_stats_summary">நாம் எத்தனை சாதனங்களில் இயங்குகிறோம் என்பதைக் கணக்கிடுகிறோம்</string>
     <string name="build_date">உருவாக்கல் தேதி</string>
-    <string name="arrow_version">ArrowOS பதிப்பு</string>
+    <string name="arrow_version">ArrowOS Extended பதிப்பு</string>
     <string name="about_device_name">சாதனம்</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">குறைந்தபட்ச மறுபுத்துணர்வு வீதம்</string>

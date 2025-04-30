@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Статистики на ArrowOS</string>
     <string name="arrow_stats_summary">Просто брояч на колко устройства работи проекта ни</string>
     <string name="build_date">Дата на изграждане</string>
-    <string name="arrow_version">ArrowOS version</string>
+    <string name="arrow_version">ArrowOS Extended version</string>
     <string name="about_device_name">Device</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Минимална честота на опресняване</string>

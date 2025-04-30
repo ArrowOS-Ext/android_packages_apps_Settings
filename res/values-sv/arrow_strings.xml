@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Statistik för ArrowOS</string>
     <string name="arrow_stats_summary">Sumering över hur många enheter som vi körs på</string>
     <string name="build_date">Kompileringsdatum</string>
-    <string name="arrow_version">Version på ArrowOS</string>
+    <string name="arrow_version">Version på ArrowOS Extended</string>
     <string name="about_device_name">Enhet</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minsta uppdateringsfrekvens</string>

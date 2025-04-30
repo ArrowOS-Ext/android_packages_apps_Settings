@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS Statistiken</string>
     <string name="arrow_stats_summary">Zählt nur auf wie vielen Geräten wir laufen</string>
     <string name="build_date">Erstellungsdatum</string>
-    <string name="arrow_version">ArrowOS Version</string>
+    <string name="arrow_version">ArrowOS Extended Version</string>
     <string name="about_device_name">Gerät</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimale Aktualisierungsrate</string>

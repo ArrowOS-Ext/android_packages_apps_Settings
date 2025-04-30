@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS 통계</string>
     <string name="arrow_stats_summary">얼마나 많은 기기가 ArrowOS로 실행되는지 집계합니다.</string>
     <string name="build_date">빌드 날짜</string>
-    <string name="arrow_version">ArrowOS 버전</string>
+    <string name="arrow_version">ArrowOS Extended 버전</string>
     <string name="about_device_name">기기</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">최소 재생률</string>

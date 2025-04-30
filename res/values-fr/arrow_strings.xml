@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Statistiques ArrowOS</string>
     <string name="arrow_stats_summary">Nous comptons le nombre d’appareils sur lesquels notre Os est installé</string>
     <string name="build_date">Date de la version</string>
-    <string name="arrow_version">Version de ArrowOS</string>
+    <string name="arrow_version">Version de ArrowOS Extended</string>
     <string name="about_device_name">Appareil</string>
     <string name="refresh_rate_title">Taux de rafraîchissement</string>
     <string name="min_refresh_rate_title">Taux de rafraîchissement minimum</string>

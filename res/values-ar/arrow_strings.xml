@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">إحصائيات ArrowOS</string>
     <string name="arrow_stats_summary">فقط عد عدد الأجهزة التي نعمل عليها</string>
     <string name="build_date">تاريخ الإصدار</string>
-    <string name="arrow_version">إصدار ArrowOS</string>
+    <string name="arrow_version">إصدار ArrowOS Extended</string>
     <string name="about_device_name">الجهاز</string>
     <string name="refresh_rate_title"> معدل التحديث</string>
     <string name="min_refresh_rate_title">معدل تحديث الشاشة الأدنى</string>

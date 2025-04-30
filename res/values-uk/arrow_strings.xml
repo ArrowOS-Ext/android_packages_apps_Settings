@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Статистика ArrowOS</string>
     <string name="arrow_stats_summary">Ми просто підраховуємо, на скількох пристроях використовується ROM</string>
     <string name="build_date">Дата збірки</string>
-    <string name="arrow_version">Версія ArrowOS</string>
+    <string name="arrow_version">Версія ArrowOS Extended</string>
     <string name="about_device_name">Пристрій</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Мінімальна частота оновлення</string>

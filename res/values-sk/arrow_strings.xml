@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Štatistiky ArrowOS</string>
     <string name="arrow_stats_summary">Len si počítajte, na koľkých zariadeniach pracujeme</string>
     <string name="build_date">Dátum kompilácie</string>
-    <string name="arrow_version">Verzia systému ArrowOS</string>
+    <string name="arrow_version">Verzia systému ArrowOS Extended</string>
     <string name="about_device_name">Zariadenie</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimálna obnovovacia frekvencia</string>

@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS\'i statistika</string>
     <string name="arrow_stats_summary">Lihtsalt loendades, kui palju seadmeid me käivitame</string>
     <string name="build_date">Järgu kuupäev</string>
-    <string name="arrow_version">ArrowOS versioon</string>
+    <string name="arrow_version">ArrowOS Extended versioon</string>
     <string name="about_device_name">Seade</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimaalne värskendussagedus</string>

@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS tilastot</string>
     <string name="arrow_stats_summary">Laskuri monellako laitteella pyörimme</string>
     <string name="build_date">Koontipäivä</string>
-    <string name="arrow_version">ArrowOS-versio</string>
+    <string name="arrow_version">ArrowOS Extended-versio</string>
     <string name="about_device_name">Laite</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimi virkistystaajuus</string>

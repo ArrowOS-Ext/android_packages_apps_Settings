@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Statistik ArrowOS</string>
     <string name="arrow_stats_summary">Hanya menghitung berapa banyak perangkat yang kami jalankan</string>
     <string name="build_date">Tanggal pembuatan</string>
-    <string name="arrow_version">Versi ArrowOS</string>
+    <string name="arrow_version">Versi ArrowOS Extended</string>
     <string name="about_device_name">Perangkat</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Laju menyegar minimum</string>

@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS の統計情報</string>
     <string name="arrow_stats_summary">ArrowOS が何台の端末で動作しているか集計しています</string>
     <string name="build_date">ビルド日時</string>
-    <string name="arrow_version">ArrowOS バージョン</string>
+    <string name="arrow_version">ArrowOS Extended バージョン</string>
     <string name="about_device_name">端末</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">最小リフレッシュレート</string>

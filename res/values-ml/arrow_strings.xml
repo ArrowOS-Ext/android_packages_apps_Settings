@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ആരോ ഓഎസ് സ്ഥിതിവിവരക്കണക്കുകള്‍</string>
     <string name="arrow_stats_summary">ഞങ്ങൾ എത്ര ഉപകരണങ്ങളിൽ പ്രവർത്തിക്കുന്നു എന്ന് കണക്കാക്കുന്നു</string>
     <string name="build_date">ബിൽഡ് തീയതി</string>
-    <string name="arrow_version">ArrowOS version</string>
+    <string name="arrow_version">ArrowOS Extended version</string>
     <string name="about_device_name">ഫോൺ</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">പുതുക്കിയ നിരക്ക്</string>

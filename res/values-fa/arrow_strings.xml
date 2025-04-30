@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">آمار ArrowOS</string>
     <string name="arrow_stats_summary">تعداد دستگاه‌هایی که ArrowOS در آن ها اجرا میشود را شمارش میکنیم</string>
     <string name="build_date">تاریخ ساخت</string>
-    <string name="arrow_version">نسخه ArrowOS</string>
+    <string name="arrow_version">نسخه ArrowOS Extended</string>
     <string name="about_device_name">دستگاه</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">کمترین نرخ نوسازی صفحه‌نمایش</string>

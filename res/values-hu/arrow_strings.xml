@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS statisztikák</string>
     <string name="arrow_stats_summary">Csak tudni szeretnénk hány eszközön futunk</string>
     <string name="build_date">Készítés dátuma</string>
-    <string name="arrow_version">ArrowOS verzió</string>
+    <string name="arrow_version">ArrowOS Extended verzió</string>
     <string name="about_device_name">Eszköz</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimális képernyőfrissítés</string>

@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS istatistikleri</string>
     <string name="arrow_stats_summary">Sadece kaç cihazda çalıştığımızı sayıyoruz</string>
     <string name="build_date">İnşa tarihi</string>
-    <string name="arrow_version">ArrowOS sürümü</string>
+    <string name="arrow_version">ArrowOS Extended sürümü</string>
     <string name="about_device_name">Cihaz</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Minimum yenileme hızı</string>

@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS 统计信息</string>
     <string name="arrow_stats_summary">仅统计我们运行的设备数量</string>
     <string name="build_date">编译日期</string>
-    <string name="arrow_version">ArrowOS 版本</string>
+    <string name="arrow_version">ArrowOS Extended 版本</string>
     <string name="about_device_name">设备</string>
     <string name="refresh_rate_title">刷新率</string>
     <string name="min_refresh_rate_title">最低刷新率</string>

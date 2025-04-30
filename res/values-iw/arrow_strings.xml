@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">סטטיסטיקת ArrowOS</string>
     <string name="arrow_stats_summary">Just counting how many devices we run on</string>
     <string name="build_date">תאריך יצירה</string>
-    <string name="arrow_version">גרסת ArrowOS</string>
+    <string name="arrow_version">גרסת ArrowOS Extended</string>
     <string name="about_device_name">מכשיר</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">קצב רענון מינימלי</string>

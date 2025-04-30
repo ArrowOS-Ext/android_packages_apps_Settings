@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">ArrowOS Статистика</string>
     <string name="arrow_stats_summary">Само бројимо на колико уређаја ради наш ROM</string>
     <string name="build_date">Датум изградње</string>
-    <string name="arrow_version">ArrowOS верзија</string>
+    <string name="arrow_version">ArrowOS Extended верзија</string>
     <string name="about_device_name">Уређај</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">Минимална брзина освежавања</string>

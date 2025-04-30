@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Estatísticas ArrowOS</string>
     <string name="arrow_stats_summary">Basta contar quantos dispositivos rodamos</string>
     <string name="build_date">Data da compilação</string>
-    <string name="arrow_version">Versão do ArrowOS</string>
+    <string name="arrow_version">Versão do ArrowOS Extended</string>
     <string name="about_device_name">Dispositivo</string>
     <string name="refresh_rate_title">Taxa de atualização</string>
     <string name="min_refresh_rate_title">Taxa de atualização mínima</string>

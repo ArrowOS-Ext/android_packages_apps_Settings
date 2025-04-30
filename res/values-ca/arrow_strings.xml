@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">Estadístiques ArrowOS </string>
     <string name="arrow_stats_summary">Comptant en quants dispositius s\'usa ArrowOS</string>
     <string name="build_date">Data de compilació</string>
-    <string name="arrow_version">Versió ArrowOS</string>
+    <string name="arrow_version">Versió ArrowOS Extended</string>
     <string name="about_device_name">Dispositiu</string>
     <string name="refresh_rate_title">Freqüència de refresc</string>
     <string name="min_refresh_rate_title">Freqüència de refresc mínima</string>

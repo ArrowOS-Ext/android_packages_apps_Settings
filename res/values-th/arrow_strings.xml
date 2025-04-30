@@ -18,7 +18,7 @@
     <string name="arrow_stats_title">สถานะ ArrowOS</string>
     <string name="arrow_stats_summary">เพียงแค่นับจำนวนอุปกรณ์ที่เราใช้งาน</string>
     <string name="build_date">วันที่สร้าง</string>
-    <string name="arrow_version">เวอร์ชันของ ArrowOS</string>
+    <string name="arrow_version">เวอร์ชันของ ArrowOS Extended</string>
     <string name="about_device_name">อุปกรณ์</string>
     <string name="refresh_rate_title">Refresh rate</string>
     <string name="min_refresh_rate_title">อัตรารีเฟรชต่ำสุด</string>
