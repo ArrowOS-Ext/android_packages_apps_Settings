@@ -4028,6 +4028,18 @@
             android:exported="true"
             android:permission="android.permission.DUMP" />
 
+        <!-- Quick Settings tiles for Bypass Charge -->
+        <service
+            android:name=".charge.BypassChargingTileService"
+            android:label="@string/bypass_charging_tile_label"
+            android:icon="@drawable/ic_qs_bypass_charge"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
         <!-- Quick Settings tiles for Developer Options -->
         <service
             android:name=".development.qstile.DevelopmentTiles$ShowLayout"
@@ -4345,6 +4357,16 @@
 
         <service android:name=".fuelgauge.batterytip.AnomalyDetectionJobService"
                  android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <!-- Bypass Charge -->
+        <receiver
+            android:name=".charge.BypassChargingTileService$BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name=".homepage.contextualcards.CardContentProvider"
