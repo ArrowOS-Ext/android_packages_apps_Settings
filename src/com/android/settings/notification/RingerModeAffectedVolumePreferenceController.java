@@ -119,12 +119,10 @@ public abstract class RingerModeAffectedVolumePreferenceController extends
     }
 
     protected boolean isSeparateNotificationConfigEnabled() {
-        /* return Binder.withCleanCallingIdentity(()
+        return Binder.withCleanCallingIdentity(()
                 -> DeviceConfig.getBoolean(DeviceConfig.NAMESPACE_SYSTEMUI,
                 SystemUiDeviceConfigFlags.VOLUME_SEPARATE_NOTIFICATION,
-                CONFIG_SEPARATE_NOTIFICATION_DEFAULT_VAL)); */
-        return !mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_alias_ring_notif_stream_types);
+                CONFIG_SEPARATE_NOTIFICATION_DEFAULT_VAL));
     }
 
     /**

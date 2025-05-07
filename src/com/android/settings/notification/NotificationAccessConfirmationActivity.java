@@ -156,7 +156,7 @@ public class NotificationAccessConfirmationActivity extends Activity
                 .installContent(p);
         // Consistent with the permission dialog
         // Used instead of p.mCancelable as that is only honored for AlertDialog
-        getWindow().setCloseOnTouchOutside(false); 
+        getWindow().setCloseOnTouchOutside(false);
     }
 
     private void onAllow() {
