@@ -26,7 +26,7 @@ public class BuildDatePreferenceController extends BasePreferenceController {
 
     private static final String TAG = "BuildDatePreferenceController";
 
-    private static final String KEY_BUILD_DATE_PROP = "ro.build.date";
+    private static final String KEY_BUILD_DATE_PROP = "ro.system.build.date";
 
     public BuildDatePreferenceController(Context context, String key) {
         super(context, key);
