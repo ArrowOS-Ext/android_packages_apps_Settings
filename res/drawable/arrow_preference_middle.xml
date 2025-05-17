@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    android:color="?android:attr/colorControlHighlight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/mask">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid
+                android:color="#ffffffff" />
+            <corners
+                android:topLeftRadius="@dimen/mid_card_radius"
+                android:topRightRadius="@dimen/mid_card_radius"
+                android:bottomLeftRadius="@dimen/mid_card_radius"
+                android:bottomRightRadius="@dimen/mid_card_radius" />
+        </shape>
+    </item>
+    <item
+        android:id="@android:id/background">
+        <shape
+            android:shape="rectangle"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid
+                android:color="@color/user_crd_bg" />
+            <corners
+                android:topLeftRadius="@dimen/mid_card_radius"
+                android:topRightRadius="@dimen/mid_card_radius"
+                android:bottomLeftRadius="@dimen/mid_card_radius"
+                android:bottomRightRadius="@dimen/mid_card_radius" />
+        </shape>
+    </item>
+</ripple>

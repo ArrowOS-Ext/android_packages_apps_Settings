@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pref_bot_card_bottom_margin">20.0dip</dimen>
+    <dimen name="pref_mid_card_bottom_margin">2.0dip</dimen>
+    <dimen name="pref_top_card_bottom_margin">2.0dip</dimen>
+    <dimen name="card_radius">28.0dip</dimen>
+    <dimen name="bot_card_radius">4.0dip</dimen>
+    <dimen name="mid_card_radius">4.0dip</dimen>
+    <dimen name="top_card_radius">4.0dip</dimen>
+</resources>

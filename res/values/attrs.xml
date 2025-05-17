@@ -187,4 +187,13 @@
     <attr name="ic_menu_moreoverflow" format="reference" />
     <attr name="side_margin" format="reference|dimension" />
     <attr name="wifi_signal_color" format="reference" />
+
+    <declare-styleable name="HomepagePreference">
+        <attr name="position" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="mid" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="solo" value="3"/>
+        </attr>
+    </declare-styleable>
 </resources>
