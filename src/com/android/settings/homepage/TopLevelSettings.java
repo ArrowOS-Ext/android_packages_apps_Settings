@@ -19,16 +19,27 @@ package com.android.settings.homepage;
 import static com.android.settings.search.actionbar.SearchMenuController.NEED_SEARCH_ICON_IN_ACTION_BAR;
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.res.Configuration;
+import android.content.Intent;
+import android.content.pm.UserInfo;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import com.android.internal.util.UserIcons;
 import android.os.Bundle;
+import android.os.UserManager;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -43,14 +54,17 @@ import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
 import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.deviceinfo.DeviceNamePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.support.SupportPreferenceController;
 import com.android.settings.widget.HomepagePreference;
 import com.android.settings.widget.HomepagePreferenceLayoutHelper.HomepagePreferenceLayout;
 import com.android.settingslib.core.instrumentation.Instrumentable;
+import com.android.settingslib.drawable.CircleFramedDrawable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settingslib.widget.LayoutPreference;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
@@ -179,6 +193,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     /* scrollNeeded= */ false);
         }
         super.onStart();
+        initArrowAccountCard();
     }
 
     private boolean isOnlyOneActivityInTask() {
@@ -215,6 +230,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
             final Preference preference = screen.getPreference(i);
  	        String key = preference.getKey();
+ 	        LayoutPreference myAccount = getPreferenceScreen().findPreference("top_level_arrow_account");
 
             if (key.equals("top_level_network")
             	    || key.equals("top_level_apps")
@@ -223,6 +239,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                 preference.setLayoutResource(R.layout.homepage_preference_top);
             } else if (key.equals("top_level_connected_devices")
                     || key.equals("top_level_sound")
+                    || key.equals("top_level_sharpener")
                     || key.equals("top_level_about_device")
                     || key.equals("top_level_emergency")) {
                 preference.setLayoutResource(R.layout.homepage_preference_bottom);
@@ -237,8 +254,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
                     preference.setLayoutResource(R.layout.homepage_preference_solo);
                 }
                 preference.setOrder(20);
-            } else if (key.equals("top_level_sharpener")
-                    || key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")
+            } else if (key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")
                     || key.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.home.TopLevelSettingsActivity")
                     || key.equals("top_level_wellbeing")
                     || key.equals("top_level_wallpaper")) {
@@ -253,7 +269,61 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             } else {
                 preference.setLayoutResource(R.layout.homepage_preference_mid);
             }
+
+            if (myAccount != null) {
+                myAccount.setLayoutResource(R.layout.homepage_preference_account);
+            }
        }
+    }
+
+    private void initArrowAccountCard() {
+        final LayoutPreference myAccountPref = getPreferenceScreen().findPreference("top_level_arrow_account");
+        final Activity context = getActivity();
+
+        final UserManager userManager = (UserManager) getActivity().getSystemService(
+                Context.USER_SERVICE);
+        final UserInfo userInfo = Utils.getExistingUser(userManager,
+                android.os.Process.myUserHandle());
+
+        View root = myAccountPref.findViewById(R.id.account_container);
+        ImageView avatarView = myAccountPref.findViewById(R.id.arrow_avatar);
+        TextView ownerName = myAccountPref.findViewById(R.id.arrow_owner_account);
+
+        if (avatarView != null) {
+            Drawable userIcon = getCircularUserIcon(context);
+            if (userIcon != null) {
+                avatarView.setImageDrawable(userIcon);
+            } 
+            avatarView.setVisibility(View.VISIBLE);
+            avatarView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                    intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                      startActivity(intent);
+                }
+            });
+        }
+
+        if (userInfo != null && ownerName != null) {
+            ownerName.setText(userInfo.name);
+        }
+    }
+
+    private Drawable getCircularUserIcon(Context context) {
+    	final UserManager mUserManager = getSystemService(UserManager.class);
+        Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
+
+        if (bitmapUserIcon == null) {
+            // get default user icon.
+            final Drawable defaultUserIcon = UserIcons.getDefaultUserIcon(
+                    context.getResources(), UserHandle.myUserId(), false);
+            bitmapUserIcon = UserIcons.convertToBitmap(defaultUserIcon);
+        }
+        Drawable drawableUserIcon = new CircleFramedDrawable(bitmapUserIcon,
+                (int) context.getResources().getDimension(com.android.internal.R.dimen.user_icon_size));
+
+        return drawableUserIcon;
     }
 
     @Override

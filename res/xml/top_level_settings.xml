@@ -20,6 +20,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="top_level_settings">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="top_level_arrow_account"
+        android:order="-170"
+        android:layout="@layout/homepage_preference_account" />
+
     <com.android.settings.widget.HomepagePreference
         android:key="top_level_sharpener"
         android:title="@string/sharpener_title"

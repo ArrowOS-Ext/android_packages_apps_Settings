@@ -49,6 +49,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 import androidx.annotation.VisibleForTesting;
@@ -82,15 +83,14 @@ import com.android.settingslib.core.lifecycle.HideNonSystemOverlayMixin;
 import com.android.settingslib.drawable.CircleFramedDrawable;
 
 import java.net.URISyntaxException;
-import java.util.Set;
+import java.util.*;
+import java.lang.*;
 
 /** Settings homepage activity */
 public class SettingsHomepageActivity extends FragmentActivity implements
         CategoryMixin.CategoryHandler {
 
     private static final String TAG = "SettingsHomepageActivity";
-
-    private ImageView mAvatarView;
 
     // Additional extra of Settings#ACTION_SETTINGS_LARGE_SCREEN_DEEP_LINK.
     // Put true value to the intent when startActivity for a deep link intent from this Activity.
@@ -216,6 +216,8 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         setupEdgeToEdge();
         setContentView(R.layout.settings_homepage_container);
 
+        updateHomepageTitle();
+
         mActivityEmbeddingController = ActivityEmbeddingController.getInstance(this);
         mIsTwoPane = mActivityEmbeddingController.isActivityEmbedded(this);
 
@@ -224,21 +226,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         updateHomepageAppBar();
         updateHomepageBackground();
         mLoadedListeners = new ArraySet<>();
-
-        mAvatarView = findViewById(R.id.account_avatar);
-
-        if (mAvatarView != null) {
-          mAvatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
-          mAvatarView.setVisibility(View.VISIBLE);
-          mAvatarView.setOnClickListener(new View.OnClickListener() {
-              @Override
-              public void onClick(View v) {
-                  Intent intent = new Intent(Intent.ACTION_MAIN);
-                  intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                  startActivity(intent);
-              }
-          });
-        }
 
         initSearchBarView();
 
@@ -275,6 +262,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     protected void onStart() {
         ((SettingsApplication) getApplication()).setHomeActivity(this);
         super.onStart();
+        updateHomepageTitle();
     }
 
     @Override
@@ -314,6 +302,14 @@ public class SettingsHomepageActivity extends FragmentActivity implements
             updateHomepagePaddings();
         }
         updateSplitLayout();
+    }
+
+    private void updateHomepageTitle() {
+        final TextView textView = findViewById(R.id.homepage_title);
+        String[] msg = getResources().getStringArray(R.array.arrow_homepage_greet);
+        Random genmsg = new Random();
+        int  n = genmsg.nextInt(msg.length-1);
+        textView.setText(msg[n]);
     }
 
     private void updateSplitLayout() {
@@ -380,7 +376,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         if (!mIsEmbeddingActivityEnabled) {
             return;
         }
-
+    
         final Window window = getWindow();
         final int color = mIsTwoPane
                 ? getColor(R.color.settings_two_pane_background_color)
@@ -735,30 +731,6 @@ public class SettingsHomepageActivity extends FragmentActivity implements
             if (fragment instanceof SplitLayoutListener) {
                 ((SplitLayoutListener) fragment).setSplitLayoutSupported(mIsTwoPaneLayout);
             }
-        }
-    }
-
-    private Drawable getCircularUserIcon(Context context) {
-    	final UserManager mUserManager = getSystemService(UserManager.class);
-        Bitmap bitmapUserIcon = mUserManager.getUserIcon(UserHandle.myUserId());
-
-        if (bitmapUserIcon == null) {
-            // get default user icon.
-            final Drawable defaultUserIcon = UserIcons.getDefaultUserIcon(
-                    context.getResources(), UserHandle.myUserId(), false);
-            bitmapUserIcon = UserIcons.convertToBitmap(defaultUserIcon);
-        }
-        Drawable drawableUserIcon = new CircleFramedDrawable(bitmapUserIcon,
-                (int) context.getResources().getDimension(com.android.internal.R.dimen.user_icon_size));
-
-        return drawableUserIcon;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (mAvatarView != null) {
-          mAvatarView.setImageDrawable(getCircularUserIcon(getApplicationContext()));
         }
     }
 }

@@ -66,4 +66,19 @@
         <item>1.30</item>
     </string-array>
 
+    <string-array name="arrow_homepage_greet">
+          <item>@string/xd_dashboard_greet1</item>
+          <item>@string/xd_dashboard_greet2</item>
+          <item>@string/xd_dashboard_greet3</item>
+          <item>@string/xd_dashboard_greet4</item>
+          <item>@string/xd_dashboard_greet5</item>
+          <item>@string/xd_dashboard_greet6</item>
+          <item>@string/xd_dashboard_greet7</item>
+          <item>@string/xd_dashboard_greet8</item>
+          <item>@string/xd_dashboard_greet9</item>
+          <item>@string/xd_dashboard_greet10</item>
+          <item>@string/xd_dashboard_greet11</item>
+          <item>@string/xd_dashboard_greet12</item>
+    </string-array>
+
 </resources>

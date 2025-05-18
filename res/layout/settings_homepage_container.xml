@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2018 The Android Open Source Project
+     Copyright (C) 2022 The xdroidOSS, xyzprjkt
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,41 +20,58 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/settings_homepage_container"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/main_content_scrollable_container"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:layout_behavior="com.android.settings.widget.HomepageAppBarScrollingViewBehavior">
-
-        <LinearLayout
-            android:id="@+id/homepage_container"
+    
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginStart="@dimen/card_padding_horizontal"
+            android:layout_marginEnd="@dimen/card_padding_horizontal"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="@dimen/card_radius"
+            app:cardElevation="0dp">
 
-            <include
-                android:id="@+id/suggestion_container_two_pane"
-                layout="@layout/suggestion_container_two_pane"
-                android:visibility="gone"/>
-
-            <FrameLayout
-                android:id="@+id/contextual_cards_content"
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/main_content_scrollable_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/contextual_card_side_margin"
-                android:layout_marginEnd="@dimen/contextual_card_side_margin"/>
+                android:layout_height="match_parent"
+                android:scrollbars="none">
 
-            <FrameLayout
-                android:id="@+id/main_content"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:animateLayoutChanges="true"/>
+                <LinearLayout
+                    android:id="@+id/homepage_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+                    <include
+                        android:id="@+id/suggestion_container_two_pane"
+                        layout="@layout/suggestion_container_two_pane"
+                        android:visibility="gone"/>
+
+                    <FrameLayout
+                        android:id="@+id/contextual_cards_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <FrameLayout
+                        android:id="@+id/main_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/card_padding_horizontal-dec"
+                        android:layout_marginEnd="@dimen/card_padding_horizontal-dec"
+                        android:animateLayoutChanges="true" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -66,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
 
             <include
                 android:id="@+id/homepage_app_bar_regular_phone_view"
@@ -76,6 +94,7 @@
                 android:id="@+id/homepage_app_bar_two_pane_view"
                 layout="@layout/settings_homepage_app_bar_two_pane_layout"
                 android:visibility="gone"/>
+
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

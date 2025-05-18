@@ -237,4 +237,22 @@
     <!-- Floating rotation button -->
     <string name="enable_floating_rotation_button_title">Floating rotation button</string>
 
+    <!-- Header Account -->
+    <string name="arrow_homepage_account_summary">Manage Your Arrow Profiles here</string>
+
+    <!-- Randome Homepage Message -->
+    <string name="xd_dashboard_greet_default">What are you looking for?</string>
+    <string name="xd_dashboard_greet1">What are you looking for?</string>
+    <string name="xd_dashboard_greet2">Looking for something?</string>
+    <string name="xd_dashboard_greet3">Need to change anything?</string>
+    <string name="xd_dashboard_greet4">Search for something?</string>
+    <string name="xd_dashboard_greet5">Need anything?</string>
+    <string name="xd_dashboard_greet6">Let\'s do something cool</string>
+    <string name="xd_dashboard_greet7">Got something to change?</string>
+    <string name="xd_dashboard_greet8">Say hi, to the world?</string>
+    <string name="xd_dashboard_greet9">Hi, welcome to ArrowOS-Ext</string>
+    <string name="xd_dashboard_greet10">Hey, you\'re amazing</string>
+    <string name="xd_dashboard_greet11">Ahh, still using AOSP?</string>
+    <string name="xd_dashboard_greet12">Hey, There i\'am using ArrowOS-Ext</string>
+
 </resources>

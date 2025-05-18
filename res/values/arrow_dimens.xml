@@ -7,4 +7,11 @@
     <dimen name="bot_card_radius">4.0dip</dimen>
     <dimen name="mid_card_radius">4.0dip</dimen>
     <dimen name="top_card_radius">4.0dip</dimen>
+    <dimen name="card_radius_outer">4.0dip</dimen>
+    <dimen name="card_padding_horizontal">16.0dip</dimen>
+    <dimen name="card_padding_horizontal-dec">-16.0dip</dimen>
+    <!-- xd. Toolbar -->
+    <dimen name="xd_toolbar_height">225dp</dimen>
+    <dimen name="xd_toolbar_expanded_title_margin_start">21dp</dimen>
+    <dimen name="xd_toolbar_expanded_title_margin_end">75dp</dimen>
 </resources>
